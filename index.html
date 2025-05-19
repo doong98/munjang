@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>문학상자누리집</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- jquery 라이브러리 최신버전 연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 외부 스타일 시트 -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header-bg"></div>
+            <div class="center-box">
+                <div class="left-header">
+                    <div class="logo">
+                        <a href="index.html">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 40" style="enable-background:new 0 0 150 40;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0, .st2 {fill:#FFFFFF;}
+                                .st1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+                            </style>
+                            <g>
+                                <path class="st0" d="M45.23,22.77v-4.59H61.1v4.59h-5.73v4.53h-4.59v-4.53H45.23z M45.92,4.68c0.48-0.44,1.02-0.66,1.62-0.66h13.62
+                                    v11.67h-15.9V6.3C45.26,5.7,45.48,5.16,45.92,4.68z M45.5,36.09V26.7c0-0.66,0.22-1.21,0.66-1.65c0.44-0.44,0.98-0.66,1.62-0.66
+                                    h2.28v5.94c0,0.78,0.39,1.17,1.17,1.17h9.87v4.59H45.5z M49.82,9.99c0,0.76,0.38,1.14,1.14,1.14h5.58V8.58h-5.58
+                                    c-0.76,0-1.14,0.38-1.14,1.14V9.99z"/>
+                                <path class="st0" d="M77.21,8.67h-1.18c0.66,1.06,1,2.22,1,3.48c0,0.9-0.18,1.75-0.53,2.55c-0.35,0.8-0.82,1.5-1.41,2.08
+                                    C74.5,17.38,73.8,17.85,73,18.2c-0.8,0.35-1.65,0.52-2.56,0.52c-0.9,0-1.75-0.17-2.56-0.52c-0.8-0.35-1.5-0.82-2.11-1.41
+                                    c-0.6-0.59-1.08-1.28-1.43-2.08c-0.35-0.8-0.53-1.65-0.53-2.55c0-0.64,0.09-1.25,0.27-1.83c0.18-0.58,0.43-1.13,0.75-1.65h-1.24
+                                    V4.05h4.74V0.96h4.62v3.09h4.23V8.67z M70.44,14.1c0.52,0,0.96-0.2,1.34-0.58c0.38-0.39,0.57-0.84,0.57-1.37
+                                    c0-0.54-0.19-1-0.57-1.38s-0.82-0.57-1.34-0.57c-0.54,0-0.99,0.19-1.37,0.57c-0.38,0.38-0.56,0.84-0.56,1.38
+                                    c0,0.52,0.19,0.98,0.56,1.37C69.45,13.91,69.91,14.1,70.44,14.1z M84.77,30.39c0,0.62-0.22,1.17-0.66,1.65
+                                    c-0.48,0.44-1.03,0.66-1.65,0.66h-2.28v-6.75c0-0.76-0.38-1.14-1.14-1.14h-5.85v-4.59h11.58V30.39z M88.76,13.77H85.4v4.95h-4.59
+                                    V4.05h4.59v5.13h3.36V13.77z"/>
+                                <path class="st0" d="M104.57,18.24v4.59H91.1v-4.59h2.7v-4.53h4.59v4.53H104.57z M104.48,4.08v9.39c0,0.66-0.22,1.21-0.66,1.65
+                                    c-0.44,0.44-0.98,0.66-1.62,0.66h-2.28V9.84c0-0.78-0.39-1.17-1.17-1.17h-7.47V4.08H104.48z M104.9,24.27
+                                    c1.04,0,2.02,0.2,2.93,0.58c0.91,0.39,1.71,0.93,2.38,1.61s1.21,1.47,1.61,2.38c0.39,0.91,0.58,1.88,0.58,2.89
+                                    c0,1.02-0.2,1.98-0.58,2.9c-0.39,0.91-0.93,1.7-1.61,2.37s-1.47,1.2-2.38,1.59s-1.88,0.59-2.93,0.59c-1.02,0-1.98-0.2-2.88-0.59
+                                    s-1.69-0.92-2.37-1.59s-1.21-1.46-1.6-2.37c-0.39-0.91-0.58-1.88-0.58-2.9c0-1.02,0.19-1.98,0.58-2.89
+                                    c0.39-0.91,0.92-1.71,1.6-2.38s1.47-1.21,2.37-1.61C102.92,24.47,103.88,24.27,104.9,24.27z M104.93,34.5
+                                    c0.38,0,0.74-0.07,1.08-0.21c0.34-0.14,0.63-0.34,0.88-0.59c0.25-0.25,0.45-0.54,0.6-0.88s0.22-0.7,0.22-1.08
+                                    c0-0.38-0.07-0.74-0.22-1.08s-0.35-0.63-0.6-0.88c-0.25-0.25-0.54-0.45-0.88-0.6c-0.34-0.15-0.7-0.22-1.08-0.22
+                                    s-0.74,0.07-1.08,0.22c-0.34,0.15-0.63,0.35-0.88,0.6c-0.25,0.25-0.45,0.54-0.6,0.88c-0.15,0.34-0.22,0.7-0.22,1.08
+                                    c0,0.38,0.08,0.74,0.22,1.08c0.15,0.34,0.35,0.63,0.6,0.88c0.25,0.25,0.54,0.45,0.88,0.59C104.19,34.43,104.55,34.5,104.93,34.5z
+                                    M115.04,13.77h-3.36v9.15h-4.59V4.05h4.59v5.13h3.36V13.77z"/>
+                                <path class="st0" d="M135.95,15.9l-4.32,2.85l-1.98-3.3l-3.15-5.19l-3.15,5.19l-2.01,3.3l-2.22-1.17c-0.32-0.18-0.6-0.35-0.85-0.51
+                                    c-0.25-0.16-0.43-0.39-0.53-0.69c-0.22-0.58-0.13-1.2,0.27-1.86l0.6-0.99l2.52-4.17l0.42-0.66V8.67h-3.63V4.08h17.73v4.59h-4.23
+                                    l0.03,0.03l0.39,0.66l2.55,4.17L135.95,15.9z M138.17,32.97c-0.9,0-1.75-0.17-2.53-0.51c-0.79-0.34-1.49-0.8-2.08-1.39
+                                    c-0.6-0.59-1.07-1.29-1.41-2.09c-0.34-0.8-0.51-1.65-0.51-2.55c0-0.9,0.17-1.75,0.51-2.54c0.34-0.79,0.81-1.49,1.41-2.08
+                                    c0.6-0.6,1.29-1.07,2.08-1.41c0.79-0.34,1.63-0.51,2.53-0.51c0.9,0,1.75,0.17,2.55,0.51c0.8,0.34,1.5,0.81,2.1,1.41
+                                    c0.6,0.6,1.07,1.29,1.41,2.08c0.34,0.79,0.51,1.63,0.51,2.54c0,0.9-0.17,1.75-0.51,2.55c-0.34,0.8-0.81,1.5-1.41,2.09
+                                    s-1.3,1.05-2.1,1.39C139.92,32.8,139.07,32.97,138.17,32.97z M138.17,24.51c-0.52,0-0.97,0.19-1.35,0.57
+                                    c-0.38,0.38-0.57,0.83-0.57,1.35c0,0.54,0.19,1,0.57,1.38c0.38,0.38,0.83,0.57,1.35,0.57c0.54,0,1-0.19,1.38-0.57
+                                    c0.38-0.38,0.57-0.84,0.57-1.38c0-0.52-0.19-0.97-0.57-1.35C139.17,24.7,138.71,24.51,138.17,24.51z M147.14,13.77h-3.36v4.95
+                                    h-4.59V4.05h4.59v5.13h3.36V13.77z"/>
+                            </g>
+                            <path class="st1" d="M38.95,32.63c-4.08,0-8.1,0-12.11,0c-1.94,0-3.89,0-5.83,0c-1.3,0-1.86,0.46-1.89,1.49
+                                c-0.02,1.02,0.58,1.57,1.83,1.57c5.61,0.01,11.22,0,16.83,0c0.38,0,0.75,0,1.19,0c0,0.51,0,0.94,0,1.53c-0.29,0-0.59,0-0.89,0
+                                c-5.42,0-10.84,0-16.26,0c-3.07,0-4.22-1.15-4.22-4.22c0.02-5.8,0.03-11.6,0.06-17.4c0.01-2.2,1.18-3.57,3.34-3.6
+                                c5.96-0.07,11.92-0.02,17.95-0.02C38.95,18.84,38.95,25.68,38.95,32.63z M28.34,15.79c-1.4,0-2.8-0.01-4.2,0
+                                c-2.23,0.02-1.9-0.3-1.98,2c-0.03,0.86,0.29,1.09,1.1,1.08c3.02-0.04,6.05,0.01,9.07-0.02c2.43-0.02,2.04,0.4,2.11-2.13
+                                c0.02-0.71-0.25-0.95-0.95-0.94C31.78,15.81,30.06,15.79,28.34,15.79z"/>
+                            <path class="st2" d="M16.02,25.75c0,0.54,0,0.98,0,1.52c-1.59,0-3.15,0-4.7,0c-1.34,0-2.68,0.04-4.02-0.02
+                                c-2.27-0.1-3.48-1.41-3.48-3.68c0-5.9-0.01-11.79,0-17.69c0-2.51,1.34-3.85,3.84-3.85c5.58-0.01,11.16,0,16.74,0c0.25,0,0.5,0,0.8,0
+                                c0,2.8,0,5.53,0,8.41c-1.23,0-2.49-0.02-3.75,0.01c-0.7,0.02-1.41,0.03-2.08,0.2c-2.09,0.55-3.29,2.17-3.3,4.35
+                                c-0.01,2.52,0,5.03,0,7.69c-0.38,0-0.72,0-1.05,0c-2.65,0-5.29-0.01-7.94,0c-1.17,0-1.73,0.52-1.73,1.56c0,0.94,0.6,1.5,1.7,1.51
+                                C10,25.76,12.96,25.75,16.02,25.75z M14.55,5.84c-1.4,0-2.81-0.01-4.21,0C8.15,5.86,8.46,5.56,8.39,7.76
+                                C8.36,8.64,8.64,8.93,9.52,8.92c3.03-0.04,6.06-0.01,9.09-0.02c2.4-0.01,2,0.2,2.06-2.13c0.02-0.71-0.25-0.96-0.95-0.95
+                                C18,5.86,16.28,5.84,14.55,5.84z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav>
+                        <div class="close">
+                            <a href="#">
+                                <img src="img/close-btn.png" alt="닫기버튼">
+                            </a>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="#">문장웹진</a>
+                            </li>
+                            <li>
+                                <a href="#">글틴</a>
+                            </li>
+                            <li>
+                                <a href="#">채널문장  </a>
+                            </li>
+                            <li>
+                                <a href="#">알림광장
+                                    <span>
+                                        <img src="img/arrow-down.png" alt="아래 화살표">
+                                    </span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">문학광장이란?</a></li>
+                                    <li><a href="#">문장공모</a></li>
+                                    <li><a href="#">문학소식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">자료광장
+                                    <span>
+                                        <img src="img/arrow-down.png" alt="아래 화살표">
+                                    </span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="#">문예지</a></li>
+                                    <li><a href="#">근대문학총서</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="nav-bg">
+                            <img src="img/sub-bg.png" alt="sub-bg">
+                        </div>
+                    </nav>
+                </div>
+                <div class="right-header">
+                    <div class="login">
+                        <a href="#">
+                            <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16,20a8,8,0,1,1,8-8A8,8,0,0,1,16,20ZM16,6a6,6,0,1,0,6,6A6,6,0,0,0,16,6Z"/><path d="M30,32H28A12,12,0,0,0,4,32H2a14,14,0,0,1,28,0Z"/></svg>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <a href="#">
+                            <svg class="feather feather-search" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></svg>
+                        </a>
+                    </div>
+                    <!-- pc에서는 안보임, mobile에서는 보임 -->
+                    <div class="menu">
+                        <a href="#">
+                            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path class="heroicon-ui" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 서브메뉴 배경 -->
+            <div class="sub-bg">
+                <a href="#">
+                    <img src="img/sub-bg.png" alt="sub-bg">
+                </a>
+            </div>            
+        </header>
+        <section class="s1">
+            <!-- css로 만드는 자동 fadein 슬라이드 -->
+            <div class="slide">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+                <div class="img4"></div>
+                <div class="img5"></div>
+                <div class="img6"></div>
+                <div class="img7"></div>
+            </div> 
+            <div class="slide-txt">
+                <h1>munjang</h1>
+                <h2>피어라 상상력, 즐겨라 문학!</h2>
+            </div>
+        </section>
+        <section class="s2">
+            <div class="center-box2">
+                <h2>문학웹진<hr></h2>
+                <p>커버스토리</p>
+                <span>vol.241</span>
+                <div class="acc">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="#">
+                                    <h3>소설</h3>
+                                    <p>문장에서 만나는 이야기</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#">
+                                    <h3>시</h3>
+                                    <p>문장의 시선</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#">
+                                    <h3>비평</h3>
+                                    <p>시대와 작품을 가로지르는 눈</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#">
+                                    <h3>기획</h3>
+                                    <p>문학의 모든 고민</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#">
+                                    <h3>모색</h3>
+                                    <p>문장의 색깔로 탐색하는 문학의 장</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="center-box2">
+                <h2>채널문장<hr></h2>
+                <p>목소리에 담아 추억을 선물합니다!<br>보고 듣고 감동하는 콘서트!</p>
+                <div class="banner">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p>문장의 소리</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>문학 집배원</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>북콘서트</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="center-box2">
+                <h2>문장의 소리<hr></h2>
+                <p>문학광장 <문장의 소리>는<br>
+                    2005년부터 시작된 문학 라디오입니다.</p>
+            </div>
+            <!-- swiper plugin 사용하여 슬라이드 구현 -->
+            <div class="swiper-box">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <div class="rect">
+                                    <i><img src="img/up-right-arrow.png" alt="오른쪽 위 화살표"></i>
+                                    <p>송희지 시인<br>이서아 소설가</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <div class="rect">
+                                    <i><img src="img/up-right-arrow.png" alt="오른쪽 위 화살표"></i>
+                                    <p>윤유나 시인</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <a href="#">
+                                <div class="rect">
+                                    <i><img src="img/up-right-arrow.png" alt="오른쪽 위 화살표"></i>
+                                    <p>이새해 시인</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide4">
+                            <a href="#">
+                                <div class="rect">
+                                    <i><img src="img/up-right-arrow.png" alt="오른쪽 위 화살표"></i>
+                                    <p>예소연 소설가</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <!-- 동그라미 버튼 -->
+                        <div class="swiper-pagination"></div>
+                        <!-- 자동 실행/ 멈춤 버튼 -->
+                        <div class="play-pause">
+                            <span class="play">
+                                <img src="img/play-btn.png" alt="play">
+                            </span>
+                            <span class="pause">
+                                <img src="img/pause-btn.png" alt="pause">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="s5">
+            <h1>문학광장 문장소식</h1>
+            <h3>문학광장의 다양한 소식을 전달해 드립니다.</h3>
+            <p>문학광장의 디지털원패스 사용자 가이드와 개편된 문학광장의 주요 개선 기능을 안내합니다.</p>
+            <a href="#">문장소식 바로가기</a>
+        </section>
+        <footer>
+            <div class="center-box">
+                <div class="up-footer">
+                    <div class="left-box">
+                        <div class="info">
+                            <ul>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">저작권정책</a></li>
+                                <li><a href="#">이용안내</a></li>
+                            </ul>
+                        </div>
+                        <address>
+                            (58326) 전라남도 나주시 빛가람로 640 (빛가람동 352) 한국문화예술위원회 <br class="br">대표전화 061-900-2100, 2200 사업자등록번호 208-82-01138<br>munjang@arko.or.kr, TEL.061-900-2337<br>문장웹진 ISSN 2733-6352
+                        </address>
+                    </div>
+                    <div class="right-box">
+                        <div class="family">
+                            <div class="family-title">
+                                Family Sites
+                                <span>
+                                    <img src="img/arrow-down.png" alt="arrow-down">
+                                </span>
+                            </div>
+                            <div class="family-list">
+                                <ul>
+                                    <li><a href="#">한국문화예술위원회</a></li>
+                                    <li><a href="#">국가문화예술지원시스템</a></li>
+                                    <li><a href="#">아트누리</a></li>
+                                    <li><a href="#">아르코 통합플랫폼</a></li>
+                                    <li><a href="#">문화예술, 내일</a></li>
+                                    <li><a href="#">A SQUARE</a></li>
+                                    <li><a href="#">공공미술포털</a></li>
+                                    <li><a href="#">문화누리</a></li>
+                                    <li><a href="#">인문360</a></li>
+                                    <li><a href="#">예술나무</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sns">
+                            <ul>
+                                <li><a href="#">
+                                    <svg enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x34__stroke"><g id="Youtube_1"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/><path clip-rule="evenodd" d="M126.72,38.224c0,0-1.252-8.883-5.088-12.794    c-4.868-5.136-10.324-5.16-12.824-5.458c-17.912-1.305-44.78-1.305-44.78-1.305h-0.056c0,0-26.868,0-44.78,1.305    c-2.504,0.298-7.956,0.322-12.828,5.458C2.528,29.342,1.28,38.224,1.28,38.224S0,48.658,0,59.087v9.781    c0,10.433,1.28,20.863,1.28,20.863s1.248,8.883,5.084,12.794c4.872,5.136,11.268,4.975,14.116,5.511    c10.24,0.991,43.52,1.297,43.52,1.297s26.896-0.04,44.808-1.345c2.5-0.302,7.956-0.326,12.824-5.462    c3.836-3.912,5.088-12.794,5.088-12.794S128,79.302,128,68.868v-9.781C128,48.658,126.72,38.224,126.72,38.224z M50.784,80.72    L50.78,44.501l34.584,18.172L50.784,80.72z" fill="#CE1312" fill-rule="evenodd" id="Youtube"/></g></g></svg>
+                                </a></li>
+                                <li><a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g></svg>
+                                </a></li>
+                                <li><a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g></svg>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="down-footer">
+                    <p>Copyright 2023 Arts Council Korea. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView:3,
+            spaceBetween:70,
+            centeredSlides:true,
+            autoplay:{
+                delay:4000
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints:{
+                 480:{
+                    slidesPerView:1,
+                    spaceBetween:0
+                 },
+                 768:{
+                    slidesPerView:1.6,
+                    spaceBetween:50
+                 },
+                 1024:{
+                    slidesPerView:1.6,
+                    spaceBetween:70
+                 },
+                 1200:{
+                    slidesPerView:3,
+                     spaceBetween:70
+                 },
+                 1400:{
+                    slidesPerView:3,
+                     spaceBetween:70
+                 },
+                 1600:{
+                    slidesPerView:3,
+                     spaceBetween:70
+                 },
+                 1920:{
+                     slidesPerView:3,
+                     spaceBetween:70
+                 }
+            }
+        });
+    </script>
+    <script>
+        $(function(){
+            //접속한 기기의 가로길이를 구해서 변수 width에 저장
+            let width=$(window).width();
+            //만약 접속한 기기의 가로길이가 480px보다 크면 pc버전,
+            //만약 접속한 기기의 가로길이가 480px이하라면 모바일 버전의 내비게이션 실행
+            if(width > 480){
+                //header의 nav(내비게이션)의 주메뉴에 마우스 오버하면 서브메뉴와 서브메뉴배경 내려오는 애니메이션과 header의 배경색 변경, 메뉴 글자색 변경, .right-header의 아이콘색 변경, 로고색 변경
+                $("nav > ul > li").on("mouseenter",function(){
+                    $("header").addClass("active");
+                    $(".sub").stop().slideDown();
+                    $(".sub-bg").stop().slideDown();
+                });
+                //header에서 마우스 아웃하면 로고색, 메뉴글자색, 아이콘색 원래대로 변경되고, 서브메뉴와 서브메뉴배경 들어감
+                $("header").on("mouseleave",function(){
+                    $("header").removeClass("active");
+                    $(".sub").stop().slideUp();
+                    $(".sub-bg").stop().slideUp();
+                });
+            }else{
+                //세로 아코디언 메뉴 애니메이션
+                $("nav > ul > li > a").on("click", function(){
+                    $(this).next().slideToggle();         
+                    $(this).find("span").toggleClass("active");
+                    $("nav > ul > li > a").not(this).next().slideUp();
+                    $("nav > ul > li > a").not(this).find("span").removeClass("active");
+                    return false;
+                });
+            }
+            
+            //메인 페이지를 아래로 스크롤하면 header의 배경이 반투명해지고, 로고색과 메뉴글자색과 아이콘색이 변경됨
+            $(window).on("scroll", function(){
+                let secTop = $(".s2").offset().top;
+                let scrollTop = $(window).scrollTop();
+                if(scrollTop > secTop){
+                    $(".header-bg").show();
+                    $("header").addClass("active2");
+                }else{
+                    $(".header-bg").hide();
+                    $("header").removeClass("active2");
+                }
+            });
+
+            //모바일 내비게이션(메뉴 버튼 클릭하면 내비게이션이 오른쪽에서 나오고, 닫기 버튼 클릭하면 내비게이션이 오른쪽으로 들어감)
+            $(".menu").on("click", function(){
+                $("nav").animate({
+                    right:"-5%"
+                });
+            });
+            $(".close").on("click", function(){
+                $("nav").animate({
+                    right:"-105%"
+                });
+            });
+
+            //스위치 변수 선언 및 초기화
+            let sw = 0;
+            //swiper slide에서 pause버튼 클릭하면 슬라이드 멈춤
+            //swiper slide에서 play버튼 클릭하면 슬라이드 자동실행
+            $(".play-pause").on("click",function(){
+                //만약 sw변수값이 0과 같다면 {} 명령문 실행
+                if(sw == 0){
+                    //sw변수값을 1로 변경
+                    sw = 1;
+                    //swiper 자동실행 멈춤
+                    swiper.autoplay.stop();
+                    //play버튼 모양 보임
+                    $(".play").show();
+                    //pause버튼 모양 숨김
+                    $(".pause").hide();
+                //만약 sw변수값이 0과 같지 않다면 {} 명령문 실행    
+                }else{
+                    //sw변수의 값을 0으로 변경
+                    sw = 0;
+                    //swiper 자동실행
+                    swiper.autoplay.start();
+                    //play버튼 모양 숨김
+                    $(".play").hide();
+                    //pause버튼 모양 보임
+                    $(".pause").show();
+                }
+            });
+
+            let op=0;
+            //family-title을 클릭하면 family-list 나타남
+            $(".family-title").on("click",function(){
+                if(op == 0){
+                    op=1;
+                    $(".family-list").show();
+                }else{
+                    op=0;
+                    $(".family-list").hide();
+                }
+            });
+            //family-title을 다시 한번 클릭하거나 다른 곳을 클릭하면 family-list 사라짐
+            $(document).on("click",function(event){
+                if(!$(event.target).closest(".family-title").length){
+                    op=0;
+                    $(".family-list").hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
